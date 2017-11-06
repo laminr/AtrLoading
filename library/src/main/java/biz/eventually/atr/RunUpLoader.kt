@@ -3,9 +3,7 @@ package biz.eventually.atr
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
-import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
-import biz.eventually.atr.runup.R
 import com.richpath.RichPath
 import com.richpath.RichPathView
 import com.richpathanimator.RichPathAnimator
@@ -17,7 +15,7 @@ import com.richpathanimator.RichPathAnimator
 class RunUpLoader(context: Context) : Dialog(context, R.style.alert_dialog) {
 
     private lateinit var svg: RichPathView
-    private var propRight: RichPath? =  null
+    private var propRight: RichPath? = null
     private var propLeft: RichPath? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

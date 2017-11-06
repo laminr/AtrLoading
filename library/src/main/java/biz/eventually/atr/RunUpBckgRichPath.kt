@@ -9,7 +9,6 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.animation.LinearInterpolator
 import android.widget.FrameLayout
-import biz.eventually.atr.runup.R
 import com.richpath.RichPath
 import com.richpath.RichPathView
 import com.richpathanimator.AnimationBuilder

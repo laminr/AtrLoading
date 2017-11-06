@@ -1,4 +1,4 @@
-package biz.eventually.atrloading
+package biz.eventually.loading
 
 import org.junit.Test
 

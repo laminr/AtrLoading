@@ -10,7 +10,6 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.FrameLayout
 import android.widget.ImageView
-import biz.eventually.atr.runup.R
 
 /**
  * Created by Thibault de Lambilly on 05/11/2017.

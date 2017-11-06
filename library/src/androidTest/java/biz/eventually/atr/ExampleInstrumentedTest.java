@@ -1,4 +1,4 @@
-package biz.eventually.atr.runup;
+package biz.eventually.atr;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("biz.eventually.atr.runup.test", appContext.getPackageName());
+        assertEquals("biz.eventually.atr.test", appContext.getPackageName());
     }
 }

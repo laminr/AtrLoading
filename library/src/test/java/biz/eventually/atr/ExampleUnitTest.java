@@ -1,4 +1,4 @@
-package biz.eventually.atr.runup;
+package biz.eventually.atr;
 
 import org.junit.Test;
 
