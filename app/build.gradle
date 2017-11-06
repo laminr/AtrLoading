@@ -6,6 +6,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 26
+    buildToolsVersion rootProject.ext.versions.buildTool
     defaultConfig {
         applicationId "biz.eventually.loading"
         minSdkVersion 16

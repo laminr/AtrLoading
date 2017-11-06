@@ -8,9 +8,6 @@ import biz.eventually.atr.RunUpBckgRichPath
 import biz.eventually.atr.RunUpLoader
 import android.os.CountDownTimer
 
-
-
-
 class MainActivity : AppCompatActivity() {
 
     private val speeds = listOf(MotionDelay.BY_THE_WIND, MotionDelay.SLOW, MotionDelay.NORMAL, MotionDelay.QUICK)
