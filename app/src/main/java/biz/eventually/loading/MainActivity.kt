@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     fun onClickSvg(view: View) {
         val atr = findViewById<RunUpBckgRichPath>(R.id.runup)
         atr.start(speeds[index])
-        if (index++ >= speeds.size) index = 0
+        if (++index >= speeds.size) index = 0
 
     }
 }
