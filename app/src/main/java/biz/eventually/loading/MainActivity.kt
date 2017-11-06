@@ -3,9 +3,12 @@ package biz.eventually.loading
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import biz.eventually.atr.MotionDelay
+import biz.eventually.atr.enum.MotionDelay
 import biz.eventually.atr.RunUpBckgRichPath
 import biz.eventually.atr.RunUpLoader
+import android.os.CountDownTimer
+
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +23,18 @@ class MainActivity : AppCompatActivity() {
 
     fun onClickDialog(view: View) {
         val atr = RunUpLoader(this)
-        atr.show()
+        atr.start()
+
+        object : CountDownTimer(3000, 1000) {
+
+            override fun onTick(millisUntilFinished: Long) {
+            }
+
+            override fun onFinish() {
+                atr.stop()
+            }
+
+        }.start()
     }
 
     fun onClickSvg(view: View) {

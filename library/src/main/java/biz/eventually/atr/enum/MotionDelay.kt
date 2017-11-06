@@ -1,4 +1,4 @@
-package biz.eventually.atr
+package biz.eventually.atr.enum
 
 /**
  * Created by Thibault de Lambilly on 05/11/2017.

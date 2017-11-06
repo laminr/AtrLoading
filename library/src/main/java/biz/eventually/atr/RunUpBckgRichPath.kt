@@ -9,6 +9,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.animation.LinearInterpolator
 import android.widget.FrameLayout
+import biz.eventually.atr.enum.MotionDelay
 import com.richpath.RichPath
 import com.richpath.RichPathView
 import com.richpathanimator.AnimationBuilder
@@ -22,7 +23,6 @@ class RunUpBckgRichPath : FrameLayout {
     private var props: AnimationBuilder? = null
     private var propRight: RichPath? = null
     private var propLeft: RichPath? = null
-    private val duration: MotionDelay = MotionDelay.NORMAL
 
     lateinit var svg: RichPathView
 

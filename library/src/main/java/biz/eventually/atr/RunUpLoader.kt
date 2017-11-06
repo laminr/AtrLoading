@@ -30,10 +30,18 @@ class RunUpLoader(context: Context) : Dialog(context, R.style.alert_dialog) {
 
     override fun show() {
         super.show()
-        start()
+        init()
     }
 
-    private fun start() {
+    fun start() {
+        show()
+    }
+
+    fun stop() {
+        super.dismiss()
+    }
+
+    private fun init() {
         val duration: Long = 2000
         RichPathAnimator.animate(propRight)
                 .interpolator(LinearInterpolator())
