@@ -6,6 +6,8 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
+    resourcePrefix 'atrload'
+
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 26
