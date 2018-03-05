@@ -17,6 +17,7 @@ import com.richpathanimator.RichPathAnimator
 
 /**
  * Created by Thibault de Lambilly on 05/11/2017.
+ *
  */
 class RunUpBckgRichPath : FrameLayout {
 
@@ -51,9 +52,9 @@ class RunUpBckgRichPath : FrameLayout {
 
     }
 
-    fun start(speed: MotionDelay = MotionDelay.NORMAL) {
+    fun start(speed: MotionDelay = MotionDelay.NORMAL, nbrRotation : Int = 10) {
         stop()
-        initAnimator(speed)
+        initAnimator(speed, nbrRotation)
         props?.start()
     }
 
@@ -61,17 +62,19 @@ class RunUpBckgRichPath : FrameLayout {
         props = null
     }
 
-    private fun initAnimator(speed: MotionDelay = MotionDelay.NORMAL) {
-        props = RichPathAnimator.animate(propRight)
-                .interpolator(LinearInterpolator())
+    private fun initAnimator(speed: MotionDelay = MotionDelay.NORMAL, nbrRotation : Int = 10) {
+        props = RichPathAnimator
+                .animate(propRight)
+                .interpolator( LinearInterpolator())
                 .rotation(0F, 360F)
                 .duration(speed.time)
-                .repeatCount(-1)
+                .repeatCount(nbrRotation)
+
                 .andAnimate(propLeft)
                 .interpolator(LinearInterpolator())
                 .rotation(0F, -360F)
                 .duration(speed.time)
-                .repeatCount(-1)
+                .repeatCount(nbrRotation)
     }
 
 }

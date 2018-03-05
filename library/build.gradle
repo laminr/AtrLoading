@@ -1,12 +1,14 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
+// ./gradlew library:dependencies
+
 android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
-    resourcePrefix 'atrload'
+//    resourcePrefix 'atrload'
 
     defaultConfig {
         minSdkVersion 16
@@ -29,7 +31,9 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "com.android.support:appcompat-v7:${rootProject.ext.versions.support}"
+    implementation "com.android.support:support-v4:${rootProject.ext.versions.support}"
+
+    testCompile 'junit:junit:4.12'
     implementation 'com.github.tarek360.RichPath:animator:0.0.9'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    testImplementation 'junit:junit:4.12'
 }
